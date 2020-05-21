@@ -21,33 +21,39 @@
       .input-color-container {
         position: relative;
         overflow: hidden;
-        width: 40px;
+        width: 180px;
         height: 40px;
         border: solid 2px #ddd;
-        border-radius: 40px;
+        border-radius: 10px;
       }
-
+      .input-color-container:hover{
+        border: 1px solid;
+      }
       .input-color {
         position: absolute;
         right: -8px;
         top: -8px;
-        width: 56px;
+        width: 500px;
         height: 56px;
         border: none;
+        cursor: pointer;
       }
       .input-color-label {
+        cursor: pointer;
+      }
+      .mohawknav:hover, .ledstarnav:hover{
         cursor: pointer;
       }
     </style>
   </head>
 
   <body id="page-top">
-
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Kashyap Thakkar</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile2.jpg" alt="Kashyap Thakkar Profile Picture">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Kashyap Thakkar Profile Picture">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +81,7 @@
       </div>
     </nav>
   
-    <div class="container-fluid p-0">
+    <div id="container" class="container-fluid p-0">
       
       <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
         <div class="w-100">
@@ -110,7 +116,7 @@
       </div>
       <div class="input-color-container "  > 
         <input id="input-color" class="input-color" type="color" id="head" name="head"
-              value="#bd5d38" onchange="changeTheme(this)"/>
+              value="#bd5d38"  onchange="changeTheme(this)"/>
       </div>
       
     </div>
@@ -121,11 +127,15 @@
       <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
         <div class="w-100">
           <h2 class="mb-5">Experience</h2>
+          <div class="row" style="margin-bottom: 5px;">
+              <div onclick="changeWork(0)" style="text-align: center; border: 1px solid #343a40;" class="col-xs-6 col-lg-6 col-md-6 col-sm-6 mohawknav bg-primary "><h3 class="mb-0">Mohawk College</h3></div>
+              <div onclick="changeWork(1)" style="text-align: center; border: 1px solid #343a40;" class="col-xs-6 col-lg-6 col-md-6 col-sm-6 ledstarnav"><h3 class="mb-0">Ledstar Inc.</h3></div>
+          </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="mohawk">
             <div class="resume-content">
               <h3 class="mb-0">Software Developer</h3>
-              <div class="subheading mb-3">Mohawk College<br/>Hamilton, ON</div>
+              <div class="subheading mb-3">Mohawk College<br/>Hamilton, ON<br/><span class="text-primary">January 2019 - August 2019</span></div>
                 <ul>
                   <li>Developed a web solution of cloud accounting portal for FlowCPA using HTML/CSS,
   JavaScript, jQuery, Bootstrap, PHP, Laravel, MySQL, and other web technologies</li>
@@ -141,15 +151,12 @@
   as well as in identifying and debugging issues in code</li>
                 </ul>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2019 - August 2019</span>
-            </div>
           </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="ledstar" >
             <div class="resume-content">
               <h3 class="mb-0">Software Tester</h3>
-              <div class="subheading mb-3">Ledstar Inc.<br/>Woodbridge, ON</div>
+              <div class="subheading mb-3">Ledstar Inc.<br/>Woodbridge, ON<br/><span class="text-primary">January 2018 - August 2018</span></div>
                 <ul>
                   <li>Performed UI and Functional testing on Android and iOS devices (smartphones, tablets) using
   Katalon Studio</li>
@@ -159,9 +166,6 @@
                   <li>Took part in Writing test scripts to verify functionality</li>
                   <li>Worked on documenting test results</li>
                 </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Jan 2018 - August 2018</span>
             </div>
           </div>
 
@@ -190,8 +194,6 @@
               <span class="text-primary">January 2017 - December 2019</span>
             </div>
           </div>
-
-
         </div>
       </section>
 
@@ -340,7 +342,21 @@
     <script src="js/resume.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
     <script>
-      
+      $(".ledstar").hide();
+      function changeWork(currentWork){
+        if(currentWork == 1){
+          $(".mohawknav").removeClass("bg-primary");
+          $(".ledstarnav").addClass("bg-primary");
+          $(".ledstar").fadeIn(1500);
+          $(".mohawk").hide();
+          
+        }else{
+          $(".ledstarnav").removeClass("bg-primary");
+          $(".mohawknav").addClass("bg-primary");
+          $(".mohawk").fadeIn(1500);
+          $(".ledstar").hide();
+        }
+      }
       var options = {
         label: '🌓',
         time: '0.7s'
