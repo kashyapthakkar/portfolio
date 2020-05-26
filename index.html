@@ -17,34 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/resume.min.css" rel="stylesheet">
-    <style>
-      .input-color-container {
-        position: relative;
-        overflow: hidden;
-        width: 180px;
-        height: 40px;
-        border: solid 2px #ddd;
-        border-radius: 10px;
-      }
-      .input-color-container:hover{
-        border: 1px solid;
-      }
-      .input-color {
-        position: absolute;
-        right: -8px;
-        top: -8px;
-        width: 500px;
-        height: 56px;
-        border: none;
-        cursor: pointer;
-      }
-      .input-color-label {
-        cursor: pointer;
-      }
-      .mohawknav:hover, .ledstarnav:hover{
-        cursor: pointer;
-      }
-    </style>
+    
   </head>
 
   <body id="page-top">
@@ -97,24 +70,25 @@
           
           
           <div class="social-icons">
-            <a href="https://www.linkedin.com/in/kashyapthakkar1/"  target="_blank">
+            <a class="icons" href="https://www.linkedin.com/in/kashyapthakkar1/"  target="_blank">
               <i class="fa fa-linkedin"></i>
             </a>
-            <a href="https://github.com/kashyapthakkar"  target="_blank">
+            <a class="icons" href="https://github.com/kashyapthakkar"  target="_blank">
               <i class="fa fa-github"></i>
             </a>
-          
-            
           </div>
       <br/>
-      <div><a class="btn btn-primary btn-learn" href="resume/Kashyap Thakkar Resume New.pdf" download>Download CV </a></div>
+      <div>
+        <div class="banner">
+          <a class='butn butn__new' href="resume/Kashyap Thakkar Resume New.pdf" download><span>Download CV</span></a>
+        </div>
       <br/>
       <div>
         <label class="input-color-label" for="input-color">
           Try changing the theme: 
         </label>
       </div>
-      <div class="input-color-container "  > 
+      <div class="input-color-container"  > 
         <input id="input-color" class="input-color" type="color" id="head" name="head"
               value="#bd5d38"  onchange="changeTheme(this)"/>
       </div>
@@ -128,8 +102,8 @@
         <div class="w-100">
           <h2 class="mb-5">Experience</h2>
           <div class="row" style="margin-bottom: 5px;">
-              <div onclick="changeWork(0)" style="text-align: center; border: 1px solid #343a40;" class="col-xs-6 col-lg-6 col-md-6 col-sm-6 mohawknav bg-primary "><h3 class="mb-0">Mohawk College</h3></div>
-              <div onclick="changeWork(1)" style="text-align: center; border: 1px solid #343a40;" class="col-xs-6 col-lg-6 col-md-6 col-sm-6 ledstarnav"><h3 class="mb-0">Ledstar Inc.</h3></div>
+              <div onclick="changeWork(0)" style="text-align: center; border: 1px solid #343a40;" class="col-xs-6 col-lg-6 col-md-6 col-sm-6 mohawknav bg-primary nav-btn btn-border-1"><h3 class="mb-0">Mohawk College</h3></div>
+              <div onclick="changeWork(1)" style="text-align: center; border: 1px solid #343a40;" class="col-xs-6 col-lg-6 col-md-6 col-sm-6 ledstarnav bg-primary nav-btn btn-border-1"><h3 class="mb-0">Ledstar Inc.</h3></div>
           </div>
 
           <div class="mohawk">
@@ -144,7 +118,7 @@
                   <li>Built a data structure to ask customers some basic accounting questions about their business
   and suggest the best accounting apps according to their responses</li>
                   <li>Worked with 3rd parties accounting apps like Xero and HUBDOC to connect their services
-  with the client’s website using their APIs</li>
+  with the clientâ€™s website using their APIs</li>
                   <li>Integrated services like jQuery calendar, Google Custom Search API, Zoom Video Conference
   to the website</li>
       <li>Assisted in developing new features and functionalities for applications as per requirements
@@ -187,8 +161,9 @@
               <div class="subheading mb-3">Computer System Technology - Software Development (Coop)</div>
               
               <p>GPA: 81</p>
-        
-        <a class="btn btn-primary btn-learn" href="resume/kashyap_thakkar_transcript.pdf" download>Download Final Transcript </a></p>
+              <div class="banner">
+                <a class='butn butn__new' href="resume/kashyap_thakkar_transcript.pdf" download><span>Download Final Transcript</span></a>
+              </div>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">January 2017 - December 2019</span>
@@ -203,129 +178,232 @@
         <div class="w-100">
           <h2 class="mb-5">Skills</h2>
 
-          
-          <div class="subheading mb-3">Operating Systems</div>
-          <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-check"></i>Microsoft Windows, Linux, macOS
-        </li>
-          </ul>
-      <div class="subheading mb-3">Tools</div>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-check"></i>MS Visual Studio, NetBeans, Eclipse, Atom, MS Office, Adobe Photoshop basic, IDLE, MS SQL server management studio, Notepad++, Visio, MS Project 2016, VS Code, Android Studio, Oracle VM Virtual Box, Katalon Automation Recorder, Oracle Database Express Edition, Xcode
-        </li>
-          </ul>
-      <div class="subheading mb-3">Technologies</div>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-check"></i>C, Java, ASP.NET, C#, Python, HTML 5, CSS3, JavaScript, jQuery, PHP, MVC frameworks, CodeIgniter, Laravel, Ajax, Bootstrap, React.js, WordPress, Vue.js, Node.js, Ruby
-        </li>
-          </ul>
-      <div class="subheading mb-3">Testing</div>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-check"></i>JUnit testing, Selenium web testing, Black box testing
-        </li>
-          </ul>
-      <div class="subheading mb-3">Database</div>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-check"></i>MS ACCESS, MSSQL, MySQL, ORACLE, SQLite, Redis, PostgreSQL
-        </li>
-          </ul>
-      <div class="subheading mb-3">SDLC</div>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-check"></i>Agile, Waterfall, Scrum Methodology, UML Diagrams
-        </li>
-          </ul>
-      <div class="subheading mb-3">Source Control</div>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-check"></i>Github
-        </li>
-          </ul>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 skill-card client-side">
+              <div class="subheading mb-3">Client Side Technologies</div>
+              <ul class="fa-ul mb-0">
+                <li>
+                  <i class="fa-li fa fa-check"></i>HTML5, CSS3, Bootstrap
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>React, Redux, React Router
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>Vue, Vuex, Vue Router
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>JavaScript, jQuery, JSON
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>Websockets, Mustache, Twilio
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 skill-card server-side">
+              <div class="subheading mb-3">Server Side Technologies</div>
+              <ul class="fa-ul mb-0">
+                <li>
+                  <i class="fa-li fa fa-check"></i>ASP.NET, C#
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>PHP, CodeIgniter, Laravel, Wordpress
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>Java, Python, Ruby
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>Node, Express
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>API Development
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 skill-card database">
+              <div class="subheading mb-3">Database</div>
+              <ul class="fa-ul mb-0">
+                <li>
+                  <i class="fa-li fa fa-check"></i>MySQL, MSSQL
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>SQLite, PostgreSQL
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>Redis 
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>MongoD
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>Oracle PL/SQL
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 skill-card testing">
+              <div class="subheading mb-3">Testing Knowledge</div>
+              <ul class="fa-ul mb-0">
+                <li>
+                  <i class="fa-li fa fa-check"></i>Blackbox Testing
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>Automation Testing
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>Katalon, Selenium, JUnit
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <hr class="m-0">
-
+      
       <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
         <div class="w-100">
           <h2 class="mb-5">Projects</h2>
-        <div class="w-100">
-      
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-          <h3 class="mb-0">Technoholic(Final Project)</h3>
-            
-          <p>Created a fully functional responsive eCommerce website from scratch for final project</p>
+          <div class="row">
+            <div class="card-wrapper col-lg-6 col-md-6 col-xs-12">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img class="card-img-top" src="img/technoholic1.JPG" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Technoholic</h5>
+                  <div class="card-content">
+                    <p>Created a fully functional responsive eCommerce website from scratch for final project</p>
           <p>Languages/Tools used: HTML5, CSS3, JavaScript, jQuery, PHP, Bootstrap, MySQL, Katalon Studio, GitHub</p>
-          <a class="btn btn-primary btn-learn" href="https://csunix.mohawkcollege.ca/~000742712/projects/Capstone/" target="blank">Visit Project</a></p>
-          </div>
-          <div class="resume-date text-md-right">
-          <span class="text-primary">Semester 6</span>
-          </div>
-        </div>
-        
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-          <h3 class="mb-0">SMS bot with Faas and DBaas</h3>
-            
-          <p>Created a serverless SMS bot using Twilio, which uses a microservice (DBaas) to store application data</p>
-          <p>Languages/Tools used: HTML5, CSS3, JavaScript, jQuery, Node.js, WebSocket, Twilio, Redis, SQLite, GitHub API</p>
-          <a class="btn btn-primary btn-learn" href="https://github.com/kashyapthakkar/SMS-bot-with-Faas-and-DBaas.git" target="blank">Visit Project</a></p>
-          </div>
-          <div class="resume-date text-md-right">
-          <span class="text-primary">Semester 6</span>
-          </div>
-        </div>
-        
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-          <h3 class="mb-0">Slackbot with YELP API</h3>
-            
-          <p>Created a Slackbot using Node.js and YELP API that delivers information about local restaurants according to commands delivered in the Slack chat window</p>
-          <p>Languages/Tools used: Node.js, YELP API, SQLite, Slackbots</p>
-          <a class="btn btn-primary btn-learn" href="https://github.com/kashyapthakkar/Slackbot.git" target="blank">Visit Project</a></p>
-          </div>
-          <div class="resume-date text-md-right">
-          <span class="text-primary">Semester 6</span>
-          </div>
-        </div>
-        
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-          <h3 class="mb-0">Simple Quiz App</h3>
-            
-          <p>Created a real-time quiz application with Socket.io that allows teachers to create timed questions, send those questions to students who must answer them in time, and collects and displays the answer results, and then repeats this process for additional questions</p>
-          <p>Tools/Languages used: HTML5, CSS3, JavaScript, jQuery, Node.js, WebSockets</p>
-          <a class="btn btn-primary btn-learn" href="https://github.com/kashyapthakkar/simple-kahoot.git" target="blank">Visit Project</a></p>
-          </div>
-          <div class="resume-date text-md-right">
-          <span class="text-primary">Semester 6</span>
-          </div>
-        </div>
-        
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-          <h3 class="mb-0">Explore Hamilton</h3>
-            
-          <p>A web application called Explore Hamilton which helps it users to explore different tourism places located in Hamilton city on BING maps</p>
-          <p>Tools/Languages used: HTML5, CSS3, JavaScript, jQuery, PHP, Bootstrap, BING maps</p>
-          <a class="btn btn-primary btn-learn" href="https://csunix.mohawkcollege.ca/~000742712/release/" target="blank">Visit Project</a></p>
-          </div>
-          <div class="resume-date text-md-right">
-          <span class="text-primary">Semester 4</span>
-          </div>
-        </div>
-        
 
+          <span class="social-icons">
 
-        <p><a href="https://github.com/kashyapthakkar" class="btn btn-primary btn-lg btn-load-more" target="_blank">Visit GitHub Profile for more</a></p>
-        </div>
+            <a class="icons" style="height:3rem;width:3rem;" href="https://github.com/kashyapthakkar/capstone"  target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </span>
+          <div class="banner">
+            <a class='butn butn__new' style="float: right;"href="https://csunix.mohawkcollege.ca/~000742712/projects/Capstone/" target="blank"><span>Visit Project</span></a>
+          </div>
+          
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper col-lg-6 col-md-6 col-xs-12">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img class="card-img-top" src="img/sms.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">SMS BOT WITH FAAS AND DBAAS
+                  </h5>
+                  <div class="card-content">
+                    <p>Created a serverless SMS bot using Twilio, which uses a microservice (DBaas) to store application data
+                    </p>
+          <p>Languages/Tools used: HTML5, CSS3, JavaScript, jQuery, Node.js, WebSocket, Twilio, Redis, SQLite, GitHub API
+          </p>
+          <span class="social-icons">
+
+            <a class="icons"style="height:3rem;width:3rem;" href="https://github.com/kashyapthakkar/SMS-bot-with-Faas-and-DBaas"  target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper col-lg-6 col-md-6 col-xs-12">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img class="card-img-top" src="img/profile2.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio</h5>
+                  <div class="card-content">
+                    <p>A simple SPA responsive portfolio website </p>
+          <span class="social-icons">
+
+            <a class="icons"style="height:3rem;width:3rem;" href="https://github.com/kashyapthakkar/portfolio"  target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper col-lg-6 col-md-6 col-xs-12">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img class="card-img-top" src="img/slack.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">SLACKBOT WITH YELP API
+                  </h5>
+                  <div class="card-content">
+                    <p>Created a Slackbot using Node.js and YELP API that delivers information about local restaurants according to commands delivered in the Slack chat window
+
+                    </p>
+          <p>Languages/Tools used: Node.js, YELP API, SQLite, Slackbots
+          </p>
+          <span class="social-icons">
+
+            <a class="icons"style="height:3rem;width:3rem;" href="https://github.com/kashyapthakkar/Slackbot"  target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper col-lg-6 col-md-6 col-xs-12">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img class="card-img-top" src="img/quiz.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">SIMPLE QUIZ APP
+                  </h5>
+                  <div class="card-content">
+                    <p>Created a real-time quiz application with Socket.io that allows teachers to create timed questions, send those questions to students who must answer them in time, and collects and displays the answer results, and then repeats this process for additional questions
+                    </p>
+          <p>Tools/Languages used: HTML5, CSS3, JavaScript, jQuery, Node.js, WebSockets
+          </p>
+          <span class="social-icons">
+
+            <a class="icons"style="height:3rem;width:3rem;" href="https://github.com/kashyapthakkar/simple-kahoot"  target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper col-lg-6 col-md-6 col-xs-12">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img class="card-img-top" src="img/hamilton.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">EXPLORE HAMILTON
+                  </h5>
+                  <div class="card-content">
+                    <p>A web application called Explore Hamilton which helps it users to explore different tourism places located in Hamilton city on BING maps
+                    </p>
+          <p>Tools/Languages used: HTML5, CSS3, JavaScript, jQuery, PHP, Bootstrap, BING maps
+          </p>
+          <span class="social-icons">
+
+            <a class="icons"style="height:3rem;width:3rem;" href="https://github.com/kashyapthakkar/Hamilton-Open-Data"  target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+       
         </div>
       </section>
 
@@ -343,29 +421,26 @@
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
     <script>
       $(".ledstar").hide();
-      function changeWork(currentWork){
-        if(currentWork == 1){
-          $(".mohawknav").removeClass("bg-primary");
-          $(".ledstarnav").addClass("bg-primary");
-          $(".ledstar").fadeIn(1500);
-          $(".mohawk").hide();
-          
-        }else{
-          $(".ledstarnav").removeClass("bg-primary");
-          $(".mohawknav").addClass("bg-primary");
-          $(".mohawk").fadeIn(1500);
-          $(".ledstar").hide();
-        }
-      }
-      var options = {
-        label: '🌓',
-        time: '0.7s'
-      }
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'UA-161459154-1');
+      function changeWork(currentWork){
+        if(currentWork == 1){
+          $(".ledstar").fadeIn(1500);
+          $(".mohawk").hide();
+          
+        }else{
+          $(".mohawk").fadeIn(1500);
+          $(".ledstar").hide();
+        }
+      }
+      var options = {
+        label: 'ðŸŒ“',
+        time: '0.5s'
+      }
+      
       const darkmode = new Darkmode(options);
       darkmode.showWidget();
       var typed = new Typed('#typed', {
@@ -375,10 +450,37 @@
       });
 
       function changeTheme(t) {
-        console.log(t.value);
         $(".text-primary").attr('style', 'color: ' + t.value + ' !important');
         $(".bg-primary").attr('style', 'background-color: ' + t.value + ' !important');
       }
+      $(".client-side").hover(function(){
+        $(".client-side").addClass("bg-primary");
+        $(".client-side").attr('style', 'color: #fff !important');
+      }).mouseleave(function(){
+        $(".client-side").removeClass("bg-primary");
+        $(".client-side").attr('style', 'cocdlor: #868e96 !important');
+      })
+      $(".server-side").hover(function(){
+        $(".server-side").addClass("bg-primary");
+        $(".server-side").attr('style', 'color: #fff !important');
+      }).mouseleave(function(){
+        $(".server-side").removeClass("bg-primary");
+        $(".server-side").attr('style', 'color: #868e96 !important');
+      })
+      $(".database").hover(function(){
+        $(".database").addClass("bg-primary");
+        $(".database").attr('style', 'color: #fff !important');
+      }).mouseleave(function(){
+        $(".database").removeClass("bg-primary");
+        $(".database").attr('style', 'color: #868e96 !important');
+      })
+      $(".testing").hover(function(){
+        $(".testing").addClass("bg-primary");
+        $(".testing").attr('style', 'color: #fff !important');
+      }).mouseleave(function(){
+        $(".testing").removeClass("bg-primary");
+        $(".testing").attr('style', 'color: #868e96 !important');
+      })
     </script>
 
   </body>
