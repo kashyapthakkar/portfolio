@@ -489,7 +489,7 @@
 
       <hr class="m-0">
 
-      <div id="visits">klkkjkljlkjl</div>
+      <div id="visits"></div>
     </div>
 
     
@@ -561,6 +561,10 @@
         $(".testing").removeClass("bg-primary");
         $(".testing").attr('style', 'color: #868e96 !important');
       })
+      
+      $.getJSON("https://api.countapi.xyz/hit/http://kashyapthakkar.com//visits", function(response) {
+          $("#visits").text(response.value);
+      });
     </script>
 
   </body>
