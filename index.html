@@ -83,7 +83,7 @@
       <br/>
       <div>
         <div class="banner">
-          <a class='butn butn__new' href="resume/Kashyap_Thakkar_Resume.pdf" download><span>Download CV</span></a>
+          <a class='butn butn__new' href="KashyapThakkarResume.pdf" download><span>Download CV</span></a>
         </div>
       <br/>
       <div>
@@ -105,8 +105,23 @@
         <div class="w-100">
           <h2 class="mb-5">Experience</h2>
           <div class="row" style="margin-bottom: 5px;">
-              <div onclick="changeWork(0)" style="text-align: center; border: 1px solid #343a40;" class="col-xs-6 col-lg-6 col-md-6 col-sm-6 mohawknav bg-primary nav-btn btn-border-1"><h3 class="mb-0">Mohawk College</h3></div>
-              <div onclick="changeWork(1)" style="text-align: center; border: 1px solid #343a40;" class="col-xs-6 col-lg-6 col-md-6 col-sm-6 ledstarnav bg-primary nav-btn btn-border-1"><h3 class="mb-0">Ledstar Inc.</h3></div>
+              <div onclick="changeWork(0)" style="text-align: center; border: 1px solid #343a40;" class="col-xs-6 col-lg-6 col-md-6 col-sm-6 mohawknav bg-primary nav-btn btn-border-1"><h3 class="mb-0">Fiverr</h3></div>
+              <div onclick="changeWork(1)" style="text-align: center; border: 1px solid #343a40;" class="col-xs-6 col-lg-6 col-md-6 col-sm-6 fiverrnav bg-primary nav-btn btn-border-1"><h3 class="mb-0">Mohawk College</h3></div>
+          </div>
+          <div class="fiverr" >
+            <div class="resume-content">
+              <h3 class="mb-0">Freelance Web Developer</h3>
+              <div class="subheading mb-3">Fiverr<br/>Remote<br/><span class="text-primary">February 2021 - Current</span></div>
+                <ul>
+                  <li>Supported remoterole.io with completing the last 30% of their site completion</li>
+                  <li>Created and implemented a custom CSS grid system, with CSS media queries for mobile responsiveness</li>
+                  <li>Evaluated front-end code in multiple browsers to ensure cross-browser compatibility</li>
+                  <li>Assisted in the development of back-end features in Python</li>
+                  <li>Collaborated with UX/UI developers to design multiple web pages</li>
+                  <li>Communicated with clients in Germany and all around the world remotely</li>
+                  <li>Workflow tools included: HTML, CSS, JavaScript, Bootstrap, jQuery, Python, Web2py, and Git</li>
+                </ul>
+            </div>
           </div>
 
           <div class="mohawk">
@@ -130,20 +145,6 @@
             </div>
           </div>
 
-          <div class="ledstar" >
-            <div class="resume-content">
-              <h3 class="mb-0">Software Tester</h3>
-              <div class="subheading mb-3">Ledstar Inc.<br/>Woodbridge, ON<br/><span class="text-primary">January 2018 - August 2018</span></div>
-                <ul>
-                  <li>Assisted in testing PC applications for bugs</li>
-                  <li>Documented test results and kept track of bugs found in the product</li>
-                  <li>Assisted senior engineers in testing dynamic message sign (DMS) controller firmware</li>
-                  <li>Took part in Writing test scripts to verify functionality</li>
-                </ul>
-            </div>
-          </div>
-
-          
 
         </div>
 
@@ -159,15 +160,13 @@
             <div class="resume-content">
               <h3 class="mb-0">Mohawk College</h3>
               <div class="subheading mb-3">Computer System Technology - Software Development (Coop)</div>
-              
-              <p>GPA: 81</p>
-              <div class="banner">
-                <a class='butn butn__new' href="resume/kashyap_thakkar_transcript.pdf" download><span>Download Final Transcript</span></a>
-              </div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2017 - December 2019</span>
-            </div>
+    
+              <p>GPA: 3.7 / 4.0</p>
+            
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2017 - December 2019</span>
+          </div>
           </div>
         </div>
       </section>
@@ -500,7 +499,7 @@
     <script src="js/resume.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
     <script>
-      $(".ledstar").hide();
+      $(".mohawk").hide();
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -508,12 +507,12 @@
       gtag('config', 'UA-161459154-1');
       function changeWork(currentWork){
         if(currentWork == 1){
-          $(".ledstar").fadeIn(1500);
-          $(".mohawk").hide();
+          $(".mohawk").fadeIn(1500);
+          $(".fiverr").hide();
           
         }else{
-          $(".mohawk").fadeIn(1500);
-          $(".ledstar").hide();
+          $(".fiverr").fadeIn(1500);
+          $(".mohawk").hide();
         }
       }
       var options = {
